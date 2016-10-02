@@ -503,10 +503,3 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
-
-.unity-logo{
-  position:absolute !important; 
-  bottom:0 !important; 
-  right:0 !important;
-  width: 50% !important; 
-}
