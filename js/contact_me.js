@@ -21,7 +21,10 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             
-            var allInONe = name + email + phone + message + firstName;
+            var allInONe = "név: " + name + "\n" + 
+                           "e-mail: " + email + "\n" + 
+                           "telefonszám: " + phone + "\n" + 
+                           "üzenet: " + message +"\n";
             
             $.ajax({
                 url: "https://formspree.io/kristofsomlyai@gmail.com",
