@@ -24,10 +24,6 @@ $(function() {
                 url: "https://formspree.io/kristofsomlyai@gmail.com",
                 type: "POST",
                 data: {
-                    name: name,
-                    phone: phone,
-                    _replyto: email,
-                    _subject: name,
                     message: message
                 },
                 dataType:"json",
