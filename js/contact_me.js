@@ -21,14 +21,16 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: "https://formspree.io/kristofsomlyai@gmail.com",
                 type: "POST",
                 data: {
                     name: name,
                     phone: phone,
-                    email: email,
+                    _replyto: email,
+                    _subject: name,
                     message: message
                 },
+                dataType:"json",
                 cache: false,
                 success: function() {
                     // Enable button & show success message
