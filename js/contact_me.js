@@ -20,11 +20,14 @@ $(function() {
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
+            
+            var allInONe = name + email + phone + message + firstName;
+            
             $.ajax({
                 url: "https://formspree.io/kristofsomlyai@gmail.com",
                 type: "POST",
                 data: {
-                    message: message
+                    message: allInONe
                 },
                 dataType:"json",
                 cache: false,
